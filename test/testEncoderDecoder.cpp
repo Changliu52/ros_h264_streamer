@@ -2,7 +2,7 @@
 #include <ros_h264_streamer/h264_encoder.h>
 #include <ros_h264_streamer/h264_decoder.h>
 
-#include <opencv/highgui.h>
+#include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
 
 int main(int argc, char * argv[])
