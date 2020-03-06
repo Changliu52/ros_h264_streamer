@@ -25,7 +25,7 @@ int main(int argc, char * argv[])
     ("quality,q", po::value<int>(&conf.quality)->default_value(28), "Encoding quality setting, range from 1 (highest quality) to 100 (lowest quality)")
     ("low-quality", "Set video quality to a low setting")
     ("high-quality", "Set video quality to a high setting")
-    ("topic,t", po::value<std::string>(&conf.camera_topic)->default_value("/camera/rgb/image_raw"), "camera topic to stream")
+    ("topic,t", po::value<std::string>(&conf.camera_topic)->default_value("/tegra_stereo/merged/image_raw"), "camera topic to stream")
     ("fps_num", po::value<int>(&conf.fps_num)->default_value(30), "FPS numerator value, will be also interpreted as camera real fps")
     ("fps_den", po::value<int>(&conf.fps_den)->default_value(1), "FPS denominator value, will be interpreted as sub-sampling denominator");
 
