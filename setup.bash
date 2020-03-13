@@ -13,7 +13,7 @@ catkin build
 
 # test
 # run streaming (need to change testStreamer.cpp ->>> ("topic,t", po::value<std::string>(&conf.camera_topic)->default_value("/tegra_stereo/merged/image_raw"), "camera topic to stream")
-# rosrun ros_h264_streamer testStreamer
+# rosrun ros_h264_streamer testStreamer --low-quality
 
 # watch udp
 # sudo tcpdump -i lo udp -v
@@ -22,5 +22,5 @@ catkin build
 # sudo tcpdump -i lo udp -w packets.pcap
 
 # read the file
-sudo apt install wireshark
-wireshark
+# sudo apt install wireshark
+# wireshark

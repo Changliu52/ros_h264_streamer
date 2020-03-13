@@ -13,7 +13,7 @@ int main(int argc, char * argv[])
   conf.server = false;
   conf.port = 10000;
   conf.host = "127.0.0.1";
-  conf.camera_topic = "/camera/rgb/image_raw";
+  conf.camera_topic = "";
 
   po::options_description desc("testStreamer options");
   desc.add_options()
@@ -40,7 +40,7 @@ int main(int argc, char * argv[])
   }
   if(vm.count("low-quality"))
   {
-    conf.quality = 35;
+    conf.quality = 35; 
   }
   if(vm.count("high-quality"))
   {
